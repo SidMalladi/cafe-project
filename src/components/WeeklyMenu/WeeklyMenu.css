@@ -1,0 +1,40 @@
+.weekly-menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.weekly-menu h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.menu-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.menu-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.menu-card ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}

@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+console.log("My custom App.js is running!");
+import React from 'react';
+import Navbar from './components/Navbar/Navbar.js';
+import Hero from './components/Hero/Hero';
+import Specials from './components/Specials/Specials';
+import WeeklyMenu from './components/WeeklyMenu/WeeklyMenu';
+import DayMenus from './components/DayMenus/DayMenus';
+import SnacksGallery from './components/SnacksGallery/SnacksGallery';
+import FAQAccordion from './components/FAQAccordion/FAQAccordion.js';
+import ContactGrid from './components/ContactGrid/ContactGrid';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <section id="specials">
+        <Specials />
+      </section>
+      <section id="weekly-menu">
+        <WeeklyMenu />
+      </section>
+      <section id="day-menus">
+        <DayMenus />
+      </section>
+      <section id="snacks-sweets">
+        <SnacksGallery />
+      </section>
+      <section id="faqs">
+        <FAQAccordion />
+      </section>
+      <section id="contact">
+        <ContactGrid />
+      </section>
+      <Footer />
+    </>
   );
 }
 
